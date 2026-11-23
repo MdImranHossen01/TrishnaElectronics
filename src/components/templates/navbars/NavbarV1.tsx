@@ -608,7 +608,7 @@ export default function NavbarV1({ initialCategories = [], initialBrands = [] }:
                     </nav>
                     <div style={{ flexShrink: 0 }} className="px-4 py-3 border-t border-border bg-background flex gap-2">
                       {!isResellerStore && (
-                        <Link href="/reseller-program" onClick={() => setMobileOpen(false)} className="flex-1 inline-flex items-center justify-center gap-1 rounded-lg border border-primary text-primary text-xs font-bold py-2 hover:bg-primary hover:text-white transition-colors">
+                        <Link href="/reseller/register" onClick={() => setMobileOpen(false)} className="flex-1 inline-flex items-center justify-center gap-1 rounded-lg border border-primary text-primary text-xs font-bold py-2 hover:bg-primary hover:text-white transition-colors">
                           <Sparkles className="h-3.5 w-3.5" />
                           Be a Reseller
                         </Link>

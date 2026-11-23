@@ -111,14 +111,14 @@ export default function FooterV2() {
     ? settings.footerNavigation
     : [
       { label: 'Shop All', href: '/shop' },
-      ...(isResellerStore ? [] : [{ label: 'Become Reseller', href: '/reseller-program' }]),
+      ...(isResellerStore ? [] : [{ label: 'Become Reseller', href: '/reseller/register' }]),
       { label: 'New Arrivals', href: '/shop?filter=new' },
       { label: 'Order Tracking', href: '/track-order' },
       { label: 'Contact Support', href: '/contact' }
     ];
   const footerNav = rawFooterNav
     .filter((link: any) => link.label !== 'Contact Support')
-    .filter((link: any) => !(isResellerStore && (link.href === '/reseller-program' || link.label?.toLowerCase().includes('reseller'))));
+    .filter((link: any) => !(isResellerStore && (link.href === '/reseller/register' || link.href === '/reseller-program' || link.label?.toLowerCase().includes('reseller'))));
 
   return (
     <footer className="bg-background border-t border-muted text-foreground pt-16 pb-8 px-6 font-jost">
@@ -132,7 +132,7 @@ export default function FooterV2() {
               {formatBrandText(settings?.brandName || process.env.NEXT_PUBLIC_STORE_NAME || 'Store')}
             </Link>
             <p className="text-muted-foreground text-sm max-w-sm leading-relaxed font-medium">
-              {settings?.siteDescription || 'Your premier destination for premium fashion, quality lifestyle products, and authentic shopping delivered right to your doorstep.'}
+              {settings?.siteDescription || 'Your trusted destination for genuine IP cameras, CC cameras, projectors, LED TVs, and modern security & electronics solutions delivered right to your doorstep.'}
             </p>
 
             {/* PWA Download App Button */}

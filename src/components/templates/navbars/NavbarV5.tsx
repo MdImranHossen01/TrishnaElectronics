@@ -114,7 +114,7 @@ export default function NavbarV5() {
   const rawNavLinks = [
     { label: 'Discovery', href: '/shop' },
     { label: 'Atelier', href: '/categories' },
-    ...(isResellerStore ? [] : [{ label: 'Become Reseller', href: '/reseller-program' }]),
+    ...(isResellerStore ? [] : [{ label: 'Become Reseller', href: '/reseller/register' }]),
     { label: 'Journal', href: '/blog' }
   ];
   const NAV_LINKS = rawNavLinks.filter((i) => !(isResellerStore && i.href === '/reseller-program'));

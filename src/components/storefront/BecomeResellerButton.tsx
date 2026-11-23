@@ -15,7 +15,7 @@ interface BecomeResellerButtonProps {
  * Uses theme CSS variables only (primary / primary-foreground).
  */
 export function BecomeResellerButton({
-  href = '/reseller-program',
+  href = '/reseller/register',
   label = 'Become a Reseller',
   className = 'px-7 py-3 text-sm sm:text-base',
 }: BecomeResellerButtonProps) {

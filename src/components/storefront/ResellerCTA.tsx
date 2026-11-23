@@ -164,12 +164,6 @@ export function ResellerCTA() {
                 {hero.registerBtnText || 'Join as a Reseller'}
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link
-                href={hero.viewPackagesBtnLink || '/reseller-program'}
-                className="inline-flex items-center justify-center gap-2 border border-border bg-card/60 hover:bg-accent hover:text-accent-foreground text-foreground font-semibold text-sm sm:text-base py-3 px-5 rounded-xl transition-all duration-200"
-              >
-                {hero.viewPackagesBtnText || 'Learn More'}
-              </Link>
             </div>
           </div>
 
