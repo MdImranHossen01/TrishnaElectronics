@@ -176,9 +176,9 @@ export async function generateMetadata(): Promise<Metadata> {
       description: settings.metaDescription || settings.brandName || "Your ultimate destination for quality products.",
       manifest: '/manifest.json',
       icons: {
-        icon: settings.logoUrl || '/favicon.ico',
-        shortcut: settings.logoUrl || '/favicon.ico',
-        apple: settings.logoUrl || '/icon-512x512.png',
+        icon: settings.logoUrl || '/favicon.ico?v=2',
+        shortcut: settings.logoUrl || '/favicon.ico?v=2',
+        apple: settings.logoUrl || '/icon-512x512.png?v=2',
       },
       appleWebApp: {
         capable: true,
@@ -277,8 +277,8 @@ export default async function RootLayout({
           </>
         ) : (
           <>
-            <link rel="icon" href="/favicon.ico" sizes="any" />
-            <link rel="shortcut icon" href="/favicon.ico" />
+            <link rel="icon" href={settings?.logoUrl || "/favicon.ico?v=2"} sizes="any" />
+            <link rel="shortcut icon" href={settings?.logoUrl || "/favicon.ico?v=2"} />
           </>
         )}
         <link rel="preload" as="image" href="/assets/login_banner_v2.webp" />
